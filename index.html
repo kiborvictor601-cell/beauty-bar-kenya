@@ -3,30 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beauty Bar Kenya</title>
+<title>Rapunzel Hair Affair</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-/* 🌸 Luxury Pink & Gold Theme */
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 body{background:#fff0f5;color:#333;}
-header{display:flex;justify-content:space-between;align-items:center;padding:20px 10%;background:#fff0f5;}
-header h1{color:#d63384;}
-nav a{text-decoration:none;margin-left:20px;color:#d63384;font-weight:500;}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 10%;background:#fff0f5;border-bottom:4px solid #d4af37;}
+header h1{color:#b30059;}
+nav a{text-decoration:none;margin-left:20px;color:#b30059;font-weight:500;}
 .hero{background:#ffd6e8;padding:100px 10%;text-align:center;border-bottom:4px solid #d4af37;}
 .hero h2{font-size:40px;color:#b30059;margin-bottom:20px;}
 .hero p{max-width:600px;margin:auto;margin-bottom:30px;font-size:18px;}
 button{padding:12px 30px;background:#d4af37;border:none;color:white;border-radius:30px;cursor:pointer;font-weight:600;}
-.product{padding:80px 10%;display:flex;flex-wrap:wrap;gap:40px;align-items:center;}
-.product img{width:350px;border-radius:10px;}
-.product-info{max-width:500px;}
-.price{font-size:22px;color:#d63384;margin:15px 0;}
-.testimonial{background:#ffd6e8;padding:60px 10%;text-align:center;font-style:italic;}
-.newsletter{padding:60px 10%;text-align:center;}
-.newsletter input{padding:10px;width:250px;border-radius:5px;border:1px solid #ccc;margin-right:10px;}
-footer{background:#b30059;color:white;padding:40px 10%;display:flex;justify-content:space-between;flex-wrap:wrap;}
+section{padding:60px 10%;}
+.section-title{font-size:32px;color:#b30059;margin-bottom:30px;text-align:center;}
+.services, .team, .gallery{display:flex;flex-wrap:wrap;gap:30px;justify-content:center;}
+.service-box, .team-member, .gallery-item{background:#fff; border-radius:10px; padding:20px; width:300px; text-align:center; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+.service-box h3, .team-member h3{color:#b30059;}
+.price{color:#b30059;font-weight:600;margin:10px 0;}
+.testimonial{text-align:center;font-style:italic;background:#ffd6e8;padding:40px;margin:40px 0;border-radius:10px;}
+.contact, footer{background:#b30059;color:white;padding:40px 10%; text-align:center;}
 footer a{color:white;text-decoration:none;display:block;margin:5px 0;}
 
-/* WhatsApp Button */
+/* WhatsApp Floating Button */
 .whatsapp-button{
 position:fixed;
 bottom:20px;
@@ -47,67 +46,91 @@ transition:0.3s;
 <body>
 
 <header>
-<h1>Beauty Bar Kenya</h1>
+<h1>Rapunzel Hair Affair</h1>
 <nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Shop</a>
-<a href="#">Instagram</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#team">Team</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
-<h2>Purely Natural, Purely You!</h2>
-<p>Discover our 100% Pure Rose Essential Oil — moisturizing, comforting, and beautifully balanced.</p>
-<button>Shop Now</button>
+<h2>Welcome to Rapunzel Hair Affair</h2>
+<p>We are passionate about making you look and feel your best. It’s the reason we get to work every day.</p>
+<button>Book Appointment</button>
 </section>
 
-<section class="product">
-<img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb" alt="Rose Oil">
-<div class="product-info">
-<h2>100% Pure Rose Essential Oil</h2>
-<p>Rose Petal Extract, 5 ml</p>
-<div class="price">Kshs. 2900</div>
-<p>A soft, floral scent to calm the body and mind.</p>
+<section id="about">
+<h2 class="section-title">About Us</h2>
+<p>Rapunzel Hair Affair is the award-winning, best hair salon in Kenya. Our salon is a sanctuary for beauty, relaxation, and transformation. We have over 20 years of experience serving clients including celebrities, diplomats, and corporate leaders.</p>
+</section>
+
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="services">
+<div class="service-box">
+<h3>Hair Dressing</h3>
+<p>Relaxers, curly perm, coloring, keratin treatment, cut & style</p>
+</div>
+<div class="service-box">
+<h3>Hair Extensions</h3>
+<p>Wig making, sew-ins, wig installation, braiding, men toupees, alopecia weaves</p>
+</div>
+<div class="service-box">
+<h3>Nails & Beauty</h3>
+<p>Gel manicure/pedicure, nail extensions, bridal packages, grooms packages</p>
+</div>
+<div class="service-box">
+<h3>Barbering & Massage</h3>
+<p>Barbering services, therapeutic massage</p>
+</div>
+<div class="service-box">
+<h3>Hair Products</h3>
+<p>Selling Porsh human hair weaves, wigs, frontals, closures, bundles</p>
+</div>
 </div>
 </section>
 
-<section class="testimonial">
-<p>“My all time favourite scent. It smells divine and lasts all day! A true and beautiful rose fragrance.”</p>
-<strong>— Sarah from Kilimani, Nairobi</strong>
+<section id="team">
+<h2 class="section-title">Our Team</h2>
+<div class="team">
+<div class="team-member">
+<h3>Professional Stylist</h3>
+<p>Specialized experience with celebrities, diplomats, and corporate clients</p>
+</div>
+<div class="team-member">
+<h3>Hair Expert</h3>
+<p>Over 20 years of professional hairstyling experience and international training</p>
+</div>
+</div>
 </section>
 
-<section class="newsletter">
-<h2>Join the Mailing List</h2>
-<p>Subscribe to our newsletter and receive 10% off your first order.</p>
-<input type="email" placeholder="Type your email...">
-<button>Subscribe</button>
+<section id="gallery">
+<h2 class="section-title">Gallery</h2>
+<div class="gallery">
+<div class="gallery-item"><img src="IMG_2283.jpg" alt="Salon Image" width="100%"></div>
+<div class="gallery-item"><img src="IMG_8313.jpg" alt="Salon Image" width="100%"></div>
+<div class="gallery-item"><img src="IMG_8321.jpg" alt="Salon Image" width="100%"></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<p>📍 1st Floor, Soin Arcade, Westlands, Nairobi</p>
+<p>📞 (+254) 722 833 465</p>
+<p>📧 rapunzelhairaffair@gmail.com</p>
+<p>Open 24 hours a day, 7 Days a week</p>
 </section>
 
 <footer>
-<div>
-<h3>The Small Print</h3>
-<a href="#">Delivery</a>
-<a href="#">Returns</a>
-<a href="#">FAQ</a>
-</div>
-<div>
-<h3>Social Media</h3>
-<a href="#">Facebook</a>
-<a href="#">Instagram</a>
-<a href="#">Pinterest</a>
-</div>
+<p>Copyright © 2025 Rapunzel Hair Affair | All Rights Reserved</p>
+<p>Website by Arani Web Designers</p>
 </footer>
 
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/254700000000" class="whatsapp-button" target="_blank">💬 WhatsApp</a>
-
-<!-- Instagram Feed Embed -->
-<section style="padding:60px 10%; text-align:center;">
-<h2>Follow Us on Instagram</h2>
-<p>See our latest beauty tips and products!</p>
-<iframe src="https://snapwidget.com/embed/123456" class="instagram-feed" style="border:none; overflow:hidden; width:100%; height:500px;" scrolling="no"></iframe>
-</section>
+<a href="https://wa.me/254722833465" class="whatsapp-button" target="_blank">💬 WhatsApp</a>
 
 </body>
 </html>
